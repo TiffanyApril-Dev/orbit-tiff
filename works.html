@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Works — orbit.tiff</title>
+  <meta name="description" content="Explore projects in UX, front-end development, accessibility, and full-stack development.">
+  
+  <!-- Design Tokens & Styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#main-content" class="skip-to-main">Skip to main content</a>
+  
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-logo">
+        <img src="images/logo_transp.png" alt="orbit.tiff logo" class="site-logo-img">
+      </a>
+      
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="works.html" class="active">Works</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#dossier" class="nav-resume">Resume ⬇</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content" id="main-content">
+    
+    <!-- WORKS HEADER -->
+    <section class="works-header">
+      <h1>Projects</h1>
+      <p class="hero-tagline">
+        A curated collection of work across UX, full-stack development, accessibility, and design.
+      </p>
+    </section>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar" role="group" aria-label="Project filters">
+      <button class="filter-button active" data-filter="all">All Projects</button>
+      <button class="filter-button" data-filter="ux">UX</button>
+      <button class="filter-button" data-filter="frontend">Front-End</button>
+      <button class="filter-button" data-filter="fullstack">Full-Stack</button>
+      <button class="filter-button" data-filter="aerospace">Aerospace</button>
+      <button class="filter-button" data-filter="accessibility">Accessibility</button>
+      <button class="filter-button" data-filter="interactive">Interactive Tool</button>
+      <button class="filter-button" data-filter="php">PHP</button>
+      <button class="filter-button" data-filter="python">Python</button>
+      <button class="filter-button" data-filter="marketing">Marketing</button>
+    </div>
+
+    <!-- PROJECTS GRID -->
+    <section class="projects-grid" aria-label="Project showcase">
+      
+      <!-- Project: Launch Commander -->
+      <article class="mission-card" data-tags="fullstack frontend aerospace">
+        <div class="project-image-wrapper">
+          <a href="https://launchcommander.tech" target="_blank" rel="noopener noreferrer">
+            <img src="images/projects/launchCommander.png" alt="Launch Commander app preview" class="project-image">
+          </a>
+        </div>
+        <h3>Launch Commander</h3>
+          <p class="mission-statement">
+            A full-stack aerospace web app that transforms rocket launch tracking into an interactive, competitive experience. Users predict mission outcomes (success probability, MECO timing, orbit altitude, payload deployment) and compete on a scored leaderboard. Built with the MEAN stack (MongoDB, Express.js, Angular, Node.js), Launch Commander integrates real-time data from the Launch Library 2 API to gamify commercial spaceflight for enthusiasts and students.
+          </p>
+        <div class="mission-tags">
+          <span class="tag">MongoDB</span>
+          <span class="tag">Express</span>
+          <span class="tag">Angular</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Full-Stack</span>
+        </div>
+        <a href="https://launchcommander.tech" target="_blank" rel="noopener noreferrer" class="mission-cta">View Live App →</a>
+      </article>
+
+      <!-- Project 2: Echelon Timepieces -->
+      <article class="mission-card" data-tags="frontend ux">
+        <div class="project-image-wrapper">
+          <a href="https://echelon-timepieces.myshopify.com" target="_blank" rel="noopener noreferrer" class="carousel-link">
+            <div class="project-carousel" data-carousel="works-card2">
+              <div class="carousel-track">
+                <img src="images/projects/card2-img1.png" alt="Echelon Timepieces - View 1" class="project-image">
+                <img src="images/projects/card2-img2.png" alt="Echelon Timepieces - View 2" class="project-image">
+                <img src="images/projects/card2-img3.png" alt="Echelon Timepieces - View 3" class="project-image">
+              </div>
+              <button class="carousel-btn carousel-prev" aria-label="Previous image">‹</button>
+              <button class="carousel-btn carousel-next" aria-label="Next image">›</button>
+              <div class="carousel-dots">
+                <button class="carousel-dot active" aria-label="Image 1"></button>
+                <button class="carousel-dot" aria-label="Image 2"></button>
+                <button class="carousel-dot" aria-label="Image 3"></button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <h3>Echelon Timepieces</h3>
+        <br>
+
+        <p class="mission-statement">
+          A fully functional, public‑ready Shopify storefront born from a passion for timeless elegance with a contemporary edge. The brand reflects refined design, seamless navigation, and a polished retail experience that showcases modern sophistication while keeping high‑end horology within reach.
+        </p>
+        <div class="mission-tags">
+          <span class="tag">Shopify</span>
+          <span class="tag">E-commerce</span>
+          <span class="tag">UX Design</span>
+        </div>
+        
+        <br>
+        <p class="mission-note">Shopify demo store — password: <strong>demo123</strong>. (Development store for portfolio.)</p>
+        <a href="https://echelon-timepieces.myshopify.com" target="_blank" rel="noopener noreferrer" class="mission-cta">View Live Store →</a>
+       <br>  
+      </article>
+
+      <!-- Project 3: Rusted Luxe -->
+      <article class="mission-card" data-tags="ux frontend">
+        <div class="project-image-wrapper">
+          <a href="#" class="disabled-link" aria-disabled="true" tabindex="-1">
+            <img src="images/projects/rustedLuxe.png" alt="Rusted Luxe Texas Horology website" class="project-image">
+          </a>
+        </div>
+        <h3>Rusted Luxe: Texas Horology</h3>
+        <p class="mission-statement">
+          A refined WooCommerce experience crafted for collectors who appreciate the art and heritage of luxury timepieces. The site blends modern WordPress design with a warm, Texas‑inspired aesthetic, showcasing premium watches through elegant product layouts, smooth navigation, and a boutique‑style shopping flow.
+        </p>
+        <div class="mission-tags">
+          <span class="tag">WordPress</span>
+          <span class="tag">WooCommerce</span>
+          <span class="tag">UX Design</span>
+        </div>
+        <p class="mission-note">🚧 Currently being rebuilt — live soon at rustedluxe.orbittiff.dev</p>
+      </article>
+
+      <!-- Project 4: Jaxon's Jewelry (JJ) -->
+      
+      <article class="mission-card" data-tags="php frontend accessibility">
+        <div class="project-image-wrapper">
+          <a href="https://jaxons.orbittiff.dev" target="_blank" rel="noopener noreferrer">
+            <img src="images/projects/jaxons.png" alt="Jaxon's Jewelry website preview" class="project-image">
+          </a>
+        </div>
+        <h3>Jaxon's Jewelry</h3>
+        <p class="mission-statement">
+          A full‑featured PHP jewelry website with a reusable template include system, server‑side form validation, and a MySQL‑backed contact form featuring honeypot spam protection, input sanitization, and time‑check guards. Includes a Birthstone Sweepstakes module with a PHP dynamic participant table, plus a demo mode for safe portfolio hosting.
+        </p>
+        <div class="mission-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Form Validation</span>
+          <span class="tag">Server-Side</span>
+        </div>
+        <a href="https://jaxons.orbittiff.dev" target="_blank" rel="noopener noreferrer" class="mission-cta">View Live Site →</a>
+      </article>
+
+      <!-- Project 5: GTX -->
+      <article class="mission-card" data-tags="frontend">
+        <div class="project-image-wrapper">
+          <a href="#" class="disabled-link" aria-disabled="true" tabindex="-1">
+            <img src="images/projects/GTX.png" alt="GTX Gym Therapy Experience website" class="project-image">
+          </a>
+        </div>
+        <h3>GTX: Gym Therapy Experience</h3>
+          <p class="mission-statement">
+            A Bootstrap-built concept site that blends fitness, recovery, and real physical therapy into one accessible space. Designed around a playful, movement-driven aesthetic, the site showcases a gym where members train alongside licensed therapists in a buddy-system model.
+          </p>
+        <div class="mission-tags">
+          <span class="tag">Bootstrap</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Health & Wellness</span>
+        </div>
+        <p class="mission-note">Project is traveling to new hosting.</p>
+      </article>
+
+      <!-- MARKETING MISSIONS -->
+      
+      <!-- Marketing Card 1: PageNotes Browser Extension -->
+      <article class="mission-card" data-tags="interactive frontend accessibility">
+        <div class="project-image-wrapper">
+          <div class="project-carousel" data-carousel="works-pagenotes">
+            <div class="carousel-track">
+              <img src="images/projects/pageNotes.png" alt="PageNotes extension shown active on a webpage" class="project-image">
+              <img src="images/projects/pageNotes2.png" alt="Close-up of a PageNotes sticky annotation icon pinned to a specific location on a page" class="project-image">
+            </div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous image">‹</button>
+            <button class="carousel-btn carousel-next" aria-label="Next image">›</button>
+            <div class="carousel-dots">
+              <button class="carousel-dot active" aria-label="Image 1"></button>
+              <button class="carousel-dot" aria-label="Image 2"></button>
+            </div>
+          </div>
+        </div>
+        <h3>PageNotes</h3>
+        <p class="mission-statement">
+          A one‑of‑a‑kind pixel‑specific browser annotation system I conceived, designed, and built with AI assistance. Notes stick to exact coordinates on any webpage and stay anchored through scrolling, resizing, and dynamic content changes. Custom icons, Chrome Extensions API storage, and UX obsessively refined for low cognitive load.
+        </p>
+        <div class="mission-tags">
+          <span class="tag">Chrome Extension</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">AI-Assisted</span>
+          <span class="tag">UX Design</span>
+        </div>
+       
+      </article>
+
+      <!-- removed: Launch Commander moved to top -->
+
+      <!-- Project: Cosmos Custom Shirts -->
+      <article class="mission-card" data-tags="python fullstack">
+        <div class="project-image-wrapper">
+          <img src="images/projects/Cosmos.png" alt="Cosmos Custom Shirts logo" class="project-image">
+        </div>
+        <h3>Cosmos Custom Shirts</h3>
+        <p class="mission-statement">
+          A full-stack Django e-commerce platform for building and ordering personalized shirts. Features a custom user model with email activation, session-based cart, product customization (size, fabric, color), and an admin-managed product catalog — demonstrating Django ORM, class-based views, and Python web development beyond basic scripting.
+        </p>
+        <div class="mission-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Django</span>
+          <span class="tag">Full-Stack</span>
+          <span class="tag">E-commerce</span>
+        </div>
+        <p class="mission-note">🚀 Deploying to DigitalOcean — live soon at cosmos.orbittiff.dev</p>
+      </article>
+
+      <!-- Marketing Card 2: Skincare Campaign -->
+      <article class="mission-card" data-tags="marketing">
+        <div class="project-image-wrapper">
+          <img src="images/marketing/starling.jpg" alt="Skincare Brand Social Campaign" class="project-image">
+        </div>
+        <h3>Skincare Brand Social Campaign</h3>
+        <p class="mission-statement">
+          Multi-platform social media campaign with cohesive graphics, promotional content, and engagement strategy for a skincare brand.
+        </p>
+        <div class="mission-tags">
+          <span class="tag">Marketing</span>
+          <span class="tag">Social Media</span>
+          <span class="tag">Photoshop</span>
+        </div>
+      </article>
+
+      <!-- Logo Design Portfolio -->
+      <article class="mission-card" data-tags="marketing frontend">
+        <div class="project-image-wrapper">
+          <button class="gallery-popup-trigger img-trigger" aria-label="Preview Logo Design Portfolio" data-gallery="logo-gallery.html">
+            <img src="images/marketing/logos/orbit.tiff.png" alt="orbit.tiff logo design sample" class="project-image">
+          </button>
+        </div>
+        <h3>Logo Design Portfolio</h3>
+        <p class="mission-statement">
+          A curated gallery of brand identity work spanning diverse industries and visual styles. Each logo is purpose‑built to capture a brand's essence — balancing aesthetics, scalability, and market fit.
+        </p>
+        <div class="mission-tags">
+          <span class="tag">Branding</span>
+          <span class="tag">Logo Design</span>
+          <span class="tag">Illustrator</span>
+        </div>
+        <button class="mission-cta gallery-popup-trigger" data-gallery="logo-gallery.html">View Gallery →</button>
+      </article>
+
+    </section>
+
+    <!-- WORK IN PROGRESS NOTICE -->
+    <div class="work-in-progress-notice" style="margin: var(--space-xl) auto; padding: var(--space-md); background: rgba(89, 164, 225, 0.1); border-left: 4px solid var(--color-accent-primary); border-radius: var(--radius-sm); max-width: 800px; text-align: center;">
+      <p style="color: var(--color-accent-primary); font-size: var(--font-size-sm); margin: 0;">
+        🚀 <strong>More projects in the launch queue</strong> — Portfolio actively under construction. Check back soon!
+      </p>
+    </div>
+
+  </main>
+
+  <!-- MINIMAL CONTACT CTA -->
+  <div style="text-align: center; padding: var(--space-xl) var(--space-lg); background: rgba(89, 164, 225, 0.05); border-top: 1px solid rgba(89, 164, 225, 0.2);">
+    <h3 style="color: var(--color-highlight); margin-bottom: var(--space-sm);">Interested in working together?</h3>
+    <p style="color: var(--color-starlight); margin-bottom: var(--space-lg); max-width: 600px; margin-left: auto; margin-right: auto;">
+      I'm available for freelance projects, consulting, and collaboration opportunities.
+    </p>
+    <a href="index.html#contact" class="cta-button" style="display: inline-block;">Get in Touch →</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2026 orbit.tiff. Built with clarity, consistency, and care.</p>
+    <p class="footer-links">
+      <a href="https://www.linkedin.com/in/tiffanymorganhill" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a> |
+      <a href="https://github.com/TiffanyApril-Dev/" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a> |
+      <a href="https://github.com/TiffanyApril-Dev/portfolio-site" target="_blank" rel="noopener noreferrer" class="footer-link">Portfolio Source</a>
+    </p>
+    
+    <!-- Easter Egg: Holographic Profile -->
+    <div class="easter-egg-container">
+      <p class="easter-egg-hint">click the signal to take a ride 👇</p>
+      <a href="index.html" class="profile-rocket profile-hologram easter-egg-profile" aria-label="Return home in holographic mode">
+        <div class="holo-grid"></div>
+        <div class="scan-lines"></div>
+        <img src="images/profile_photo.png" alt="orbit.tiff holographic mode" class="profile-image">
+        <div class="holo-glitch"></div>
+      </a>
+    </div>
+  </footer>
+
+  <!-- GALLERY POPUP MODAL -->
+  <div class="gallery-modal" id="galleryModal" role="dialog" aria-modal="true" aria-label="Logo Gallery" hidden>
+    <div class="gallery-modal-backdrop" id="galleryModalBackdrop"></div>
+    <div class="gallery-modal-frame">
+      <button class="gallery-modal-close" id="galleryModalClose" aria-label="Close gallery">✕</button>
+      <iframe id="galleryModalIframe" src="" title="Logo Design Portfolio" class="gallery-modal-iframe"></iframe>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- TELESCOPE FOLLOWER -->
+  <div class="telescope-follower" id="telescopeFollower" aria-hidden="true">
+    🔭
+  </div>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+</body>
+</html>

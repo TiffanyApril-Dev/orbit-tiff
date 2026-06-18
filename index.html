@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>orbit.tiff — Full-Stack Developer & Designer</title>
+  <meta name="description" content="Portfolio of a full-stack designer and developer focused on accessible, thoughtful web experiences.">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#main-content" class="skip-to-main">Skip to main content</a>
+  
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-logo">
+        <img src="images/logo_transp.png" alt="orbit.tiff logo" class="site-logo-img">
+      </a>
+      
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#dossier" class="nav-resume">Resume ⬇</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+    
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <button 
+        class="profile-rocket profile-nebula" 
+        id="profileRocket" 
+        aria-label="Launch to About page"
+        tabindex="0"
+      >
+        <div class="nebula-bg"></div>
+        <div class="orbital-rings">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+        </div>
+        <img 
+          src="images/profile_photo.png" 
+          alt="orbit.tiff profile" 
+          class="profile-image"
+        >
+      </button>
+      <p class="hero-intro">Hi, I'm Tiffany — <em>orbit.tiff</em> is my brand. ↑ Click my photo to visit my About page.</p>
+
+      <h1>Full-stack developer building accessible, low-cognitive-load tools for large data sets projects and beyond.</h1>
+      
+      <a href="#projects" class="cta-button">View Projects</a>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section" id="projects">
+      <div class="main-content">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-intro">Explore my recent projects across UX, accessibility, and aerospace interfaces. A selection of recent work I'm most proud of — projects that taught me how to build thoughtfully.</p>
+
+          <div class="projects-grid mission-grid" role="region" aria-label="Project gallery">
+
+            <!-- Project Card: Launch Commander -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <a href="https://launchcommander.tech" target="_blank" rel="noopener noreferrer" aria-label="Visit Launch Commander live app">
+                  <img src="images/projects/launchCommander.png" alt="Launch Commander app preview" class="project-image">
+                </a>
+              </div>
+              <div class="project-content">
+                <h3>Launch Commander</h3>
+                <p>A full-stack interactive website that tracks rocket launches. Allows users to make predictions, climb leaderboards, and view live mission data. Built with the MEAN stack and integrating Launch Library 2 along with 4 other APIs for a rich, real-time experience.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Full-Stack</span>
+                  <span class="tag">MEAN</span>
+                  <span class="tag">Aerospace</span>
+                </div>
+                <a href="https://launchcommander.tech" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+              </div>
+            </article>
+
+               <!-- Project Card: Rusted Luxe-->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+               
+                  <img src="images/projects/rustedLuxe.png" alt="Rusted Luxe Texas Horology website preview" class="project-image">
+                
+              </div>
+              <div class="project-content">
+                <h3>Rusted Luxe</h3>
+                <p>A boho‑steampunk inspired e‑commerce site built with WordPress and WooCommerce, complete with custom branding and product setup. This project highlights my ability to design, configure, and deploy a complete e‑commerce experience.</p>
+                <div class="project-tags">
+                  <span class="tag">WordPress</span>
+                  <span class="tag">WooCommerce</span>
+                  <span class="tag">PHP</span>
+                </div>
+                <a href="#" class="open-modal" data-modal="rustedLuxeModal">View Case Study →</a>
+              </div>
+            </article>
+
+            <!-- Project Card: Jaxon's Jewelry -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <a href="https://jaxons.orbittiff.dev" target="_blank" rel="noopener noreferrer" aria-label="Visit Jaxon's Jewelry website">
+                  <img src="images/projects/jaxons.png" alt="Jaxon's Jewelry website preview" class="project-image">
+                </a>
+              </div>
+              <div class="project-content">
+                <h3>Jaxon's Jewelry</h3>
+                <p>A full‑featured PHP jewelry website with server‑side form validation, a MySQL‑backed contact form with honeypot spam protection, and a Birthstone Sweepstakes module. Deployed live on DigitalOcean with Apache and SSL.</p>
+                <div class="project-tags">
+                  <span class="tag">PHP</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">Form Validation</span>
+                  <span class="tag">Server-Side</span>
+                </div>
+                <a href="https://jaxons.orbittiff.dev" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+              </div>
+            </article>
+
+            <!-- Project Card: GTX Gym Therapy Experience -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+              
+                  <img src="images/projects/GTX.png" alt="GTX Gym Therapy Experience website preview" class="project-image">
+        
+              </div>
+              <div class="project-content">
+                <h3>GTX: Gym Therapy Experience</h3>
+                <p>Gym Therapy Experience is a Bootstrap‑built concept site that blends fitness, recovery, and real physical therapy into one accessible, energetic space. Designed around a playful, movement‑driven aesthetic, the site showcases a gym where members train alongside licensed therapists in a buddy‑system model that reduces injuries and builds confidence. Every session is followed by access to in‑house recovery stations—TENS units, saunas, hot/cold compress therapy, plunges, and professional‑level PT massages—creating an environment where getting fit and getting well finally meet without the high cost of traditional therapy.</p>
+                <div class="project-tags">
+                  <span class="tag">JS</span>
+                  <span class="tag">Health & Wellness</span>
+                  <span class="tag">Bootstrap</span>
+                </div>
+</div>
+            </article>
+
+          </div>
+      </div>
+    </section>
+
+    <!-- ORBIT PAGES & INTERACTIVE LAB SECTION -->
+    <section class="projects-section orbit-pages-section" id="orbit-pages">
+      <div class="main-content">
+        <h2 class="section-title">Orbit Interactive Lab</h2>
+        <p class="section-intro">Specialized pages, interactive tools, and art & design showcases built into this very portfolio.</p>
+
+        <div class="projects-grid orbit-grid" role="region" aria-label="Orbit pages and interactive features">
+
+          <!-- Orbit Card 1: AI Partnership -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <a href="aiPartnership.html" aria-label="Explore the AI Partnership page">
+                <div class="project-placeholder" style="background: linear-gradient(135deg, #0a0812 0%, #2a205a 50%, #59a4e1 100%);">
+                  <span class="placeholder-icon">🤖</span>
+                </div>
+              </a>
+            </div>
+            <div class="project-content">
+              <h3>AI as a Work Multiplier</h3>
+              <p>An interactive AI toolkit constellation built inside this portfolio. Explore the AI tools I use daily—Copilot, Claude, ChatGPT, and more—through a live starfield skymap you can navigate with your mouse or keyboard. A transparent look at how I leverage AI to accelerate development without sacrificing craft.</p>
+              <div class="project-tags">
+                <span class="tag">AI Tools</span>
+                <span class="tag">Interactive</span>
+                <span class="tag">Canvas API</span>
+              </div>
+              <a href="aiPartnership.html" class="project-link">Explore the Lab →</a>
+            </div>
+          </article>
+
+          <!-- Orbit Card 2: Logo Design Gallery -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <a href="logo-gallery.html" aria-label="View Logo Design Portfolio">
+                <img src="images/marketing/logos/orbit.tiff.png" alt="orbit.tiff logo — logo design sample" class="project-image logo-sample">
+              </a>
+            </div>
+            <div class="project-content">
+              <h3>Logo Design Portfolio</h3>
+              <p>A curated gallery of brand identity work spanning diverse industries and visual styles. Each logo is purpose‑built to capture a brand's essence—balancing aesthetics, scalability, and market fit. From minimalist wordmarks to illustrative emblems, this collection demonstrates range and intentionality in visual communication.</p>
+              <div class="project-tags">
+                <span class="tag">Branding</span>
+                <span class="tag">Logo Design</span>
+                <span class="tag">Illustrator</span>
+              </div>
+              <a href="logo-gallery.html" class="project-link">View Gallery →</a>
+            </div>
+          </article>
+
+          <!-- Orbit Card 3: PageNotes Browser Extension -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <div class="project-carousel" data-carousel="pagenotes">
+                <div class="carousel-track">
+                  <img src="images/projects/pageNotes.png" alt="PageNotes extension shown active on a webpage" class="project-image">
+                  <img src="images/projects/pageNotes2.png" alt="Close-up of a PageNotes sticky annotation icon pinned to a specific location on a page" class="project-image">
+                </div>
+                <button class="carousel-btn carousel-prev" aria-label="Previous image">‹</button>
+                <button class="carousel-btn carousel-next" aria-label="Next image">›</button>
+                <div class="carousel-dots">
+                  <button class="carousel-dot active" aria-label="Image 1"></button>
+                  <button class="carousel-dot" aria-label="Image 2"></button>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>PageNotes</h3>
+              <p>A one‑of‑a‑kind pixel‑specific browser annotation system I conceived, designed, and built with AI assistance. Notes stick to the exact coordinates on any webpage and stay anchored through scrolling, resizing, and dynamic content changes. Custom icons, persistent storage via the Chrome Extensions API, and a UX obsessively refined for low cognitive load.</p>
+              <div class="project-tags">
+                <span class="tag">Chrome Extension</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">AI-Assisted</span>
+                <span class="tag">UX Design</span>
+              </div>
+              <a href="aiPartnership.html#pagenotes" class="project-link">Read the Case Study →</a>
+            </div>
+          </article>
+
+            <!-- Project Card: Echelon Timepieces -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <div class="project-carousel" data-carousel="homepage-echelon">
+                  <div class="carousel-track">
+                    <img src="images/projects/card2-img1.png" alt="Echelon Timepieces - View 1" class="project-image">
+                    <img src="images/projects/card2-img2.png" alt="Echelon Timepieces - View 2" class="project-image">
+                    <img src="images/projects/card2-img3.png" alt="Echelon Timepieces - View 3" class="project-image">
+                  </div>
+                  <button class="carousel-btn carousel-prev" aria-label="Previous image">‹</button>
+                  <button class="carousel-btn carousel-next" aria-label="Next image">›</button>
+                  <div class="carousel-dots">
+                    <button class="carousel-dot active" aria-label="Image 1"></button>
+                    <button class="carousel-dot" aria-label="Image 2"></button>
+                    <button class="carousel-dot" aria-label="Image 3"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Echelon Timepieces</h3>
+                <p>A fully functional Shopify storefront for a luxury watch brand. Refined UX, seamless navigation, and polished e-commerce design.</p>
+                <div class="project-tags">
+                  <span class="tag">Shopify</span>
+                  <span class="tag">E-commerce</span>
+                  <span class="tag">UX Design</span>
+                </div>
+                <a href="https://echelon-timepieces.myshopify.com" class="project-link" target="_blank" rel="noopener noreferrer">View Live Store →</a>
+                <p style="font-size: var(--font-size-sm); color: var(--color-starlight); margin-top: var(--space-sm);">Demo password: <strong>xeutus25</strong></p>
+              </div>
+            </article>
+
+          </div>
+
+          <div style="text-align:center; margin-top: var(--space-lg);">
+            <a href="works.html" class="cta-button">View All Projects →</a>
+          </div>
+
+        <div style="text-align: center; margin-top: var(--space-xl);">
+          <a href="works.html#marketing" class="cta-button">View All Marketing Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="dossier-section" id="dossier" aria-label="Resume & Downloads">
+      <div class="dossier-container">
+        <h2 class="section-title">Resume &amp; Downloads</h2>
+        <p class="section-intro">Credentials and contact, ready for your review.</p>
+
+        <div class="dossier-grid">
+
+          <!-- Resume Download Card -->
+          <div class="dossier-card resume-card">
+            <div class="dossier-card-inner">
+              <span class="dossier-icon" aria-hidden="true">📄</span>
+              <h3>Branded Resume</h3>
+              <p>Full resume — skills, experience, and objectives. One-click download, recruiter-ready.</p>
+              <a
+                href="tiffany_morganHill_June_26_Resume.pdf"
+                download="tiffany_morganHill_June_26_Resume.pdf"
+                class="dossier-download-btn"
+                aria-label="Download Tiffany Morgan Hill current resume PDF"
+              >
+                ⬇ Download Resume
+              </a>
+            </div>
+          </div>
+
+          <!-- Business Card Flip Card -->
+          <div class="dossier-card biz-card-wrapper" aria-label="Business card — hover or tap to flip">
+            <p class="flip-hint">Hover or tap to flip ↩</p>
+            <div class="biz-flip-card" tabindex="0" role="img" aria-label="orbit.tiff business card, front and back">
+              <div class="biz-flip-inner">
+                <div class="biz-flip-front">
+                  <img src="images/front.png" alt="Business card front — orbit.tiff branding" class="biz-card-img">
+                </div>
+                <div class="biz-flip-back">
+                  <img src="images/back.png" alt="Business card back — contact details" class="biz-card-img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <p class="contact-intro">
+          Have a project in mind? Let's collaborate on building accessible, thoughtful interfaces.
+        </p>
+
+        <div class="contact-methods">
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <h3>Send a Message</h3>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required 
+                  placeholder="Your name"
+                  aria-required="true"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  placeholder="your.email@example.com"
+                  aria-required="true"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="5" 
+                  required 
+                  placeholder="Tell me about your project or idea..."
+                  aria-required="true"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="contact-submit">
+                🚀 Launch Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Direct Contact -->
+          <div class="contact-direct">
+            <h3>Direct Contact</h3>
+            <div class="contact-links">
+              <a href="mailto:texashero3@gmail.com" class="contact-link">
+                <span class="contact-icon">📧</span>
+                <span class="contact-label">texashero3@gmail.com</span>
+              </a>
+              <a href="https://www.linkedin.com/in/tiffanymorganhill" class="contact-link" target="_blank" rel="noopener">
+                <span class="contact-icon">🔗</span>
+                <span class="contact-label">LinkedIn Profile</span>
+              </a>
+              <a href="https://github.com/TiffanyApril-Dev" target="_blank" rel="noopener">
+                <span class="contact-icon">💻</span>
+                <span class="contact-label">GitHub Portfolio</span>
+              </a>
+            </div>
+
+            <div class="availability-status">
+              <div class="status-indicator"></div>
+              <p>Currently available for freelance projects and full-time opportunities</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TELESCOPE FOLLOWER -->
+    <div class="telescope-follower" id="telescopeFollower" aria-hidden="true">
+      🔭
+    </div>
+
+    <!-- PROJECT CARD POPUP -->
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <div class="project-card-popup" id="projectCardPopup" role="dialog" aria-modal="true">
+      <button class="popup-close" id="popupClose" aria-label="Close popup">×</button>
+      <span class="popup-icon" id="popupIcon">🚀</span>
+      <h2 class="popup-title" id="popupTitle">Project Title</h2>
+      <p class="popup-meta" id="popupMeta">Role • Timeline</p>
+      <p class="popup-description" id="popupDescription">Project description goes here.</p>
+      <div class="popup-tags" id="popupTags"></div>
+      <a href="#" class="popup-cta" id="popupCTA">View Full Case Study →</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2026 orbit.tiff. Built with clarity, consistency, and care.</p>
+    <p style="margin-top: var(--space-sm); font-size: var(--font-size-sm);">
+      <a href="https://github.com/TiffanyApril-Dev/" target="_blank" rel="noopener noreferrer" style="margin: 0 var(--space-sm);">GitHub</a> |
+      <a href="https://github.com/TiffanyApril-Dev/portfolio-site" target="_blank" rel="noopener noreferrer" style="margin: 0 var(--space-sm);">View Portfolio Source</a>
+    </p>
+    <div class="easter-egg-container">
+      <p class="easter-egg-hint">click the signal to take a ride 👇</p>
+      <button 
+        class="profile-rocket profile-hologram easter-egg-profile" 
+        id="easterEggProfile"
+        aria-label="Hidden holographic profile"
+        title="Holographic mode activated"
+      >
+        <div class="holo-grid"></div>
+        <div class="scan-lines"></div>
+        <img src="images/profile_photo.png" alt="orbit.tiff holographic mode" class="profile-image">
+        <div class="holo-glitch"></div>
+      </button>
+    </div>
+  </footer>
+<!-- Modal code -->
+<div id="rustedLuxeModal" class="modal-overlay">
+  <div class="modal-content">
+
+    <button class="modal-close">&times;</button>
+
+    <h2>Rusted Luxe – WordPress + WooCommerce E‑Commerce Build</h2>
+
+    <section>
+      <h3>Project Overview</h3>
+      <p>
+        Rusted Luxe is a Texas‑based horology and accessories brand blending bohemian freedom with steampunk grit and western elegance. My role was to design and build a fully branded e‑commerce experience using WordPress and WooCommerce. This included developing the visual identity, customizing the theme, adding products, configuring payments and shipping, and creating a cohesive, immersive shopping experience aligned with the brand’s unique personality.
+      </p>
+      <img src="images/home.png" alt="Rusted Luxe Logo">
+    </section>
+
+    <section>
+      <h3>Branding & Visual Identity</h3>
+      <img src="images/about_muse.png" alt="Rusted Luxe Branding Inspiration">
+      <p>
+        I established a cohesive branding system inspired by Texas landscapes and the brand’s “boho‑meets‑steampunk” aesthetic. The color palette combines muted earth tones with metallic accents, creating a bold yet grounded visual identity. Typography, graphics, and photography were selected to reinforce the contrast between rustic textures and refined luxury.
+      </p>
+      <img src="images/newRustedLuxe_palette.png" alt="Rusted Luxe Color Palette">
+      <p>
+        I also created a custom logo featuring a chic cowgirl in branded colors, wearing a watch around her waist. The typography intentionally contrasts: “Rusted” uses a rugged, industrial western font, while “Luxe” uses a bold, flowing script to communicate the brand’s core theme of grit meets glamour.
+      </p>
+      <img src="images/marketing/logos/rustedLuxe.png" alt="Rusted Luxe Logo">
+    </section>
+
+    <section>
+      <h3>Product Setup & Catalog Structure</h3> 
+      <img src="images/shop1.png" alt="Rusted Luxe Shop Page">
+      <p>
+        I added 32 products organized into four custom categories. Each product received pricing, weight, SEO/meta descriptions, mock inventory, and custom titles. I customized the product grid, category pages, and content backgrounds using branded overlays and opacity adjustments to maintain visual consistency across the site.
+      </p>
+     
+      <img src="images/product_page.png" alt="Rusted Luxe Product Page">
+    </section>
+
+    <section>
+      <h3>Cart, Checkout & Payment Integration</h3>
+      <p>
+        I personalized the cart and checkout pages to match the brand’s aesthetic and tested the full purchase flow in sandbox mode. I integrated WooPay for seamless native checkout and Google Pay for fast, one‑tap mobile payments. Automated tax calculation was enabled to ensure accurate, location‑based rates.
+      </p>
+      <img src="images/cart.png" alt="Rusted Luxe Cart Page">
+      
+    </section>
+
+    <section>
+      <h3>Shipping Setup</h3>
+      <p>
+        I implemented WooCommerce Shipping and migrated the store to the updated WooCommerce Shipping experience. Shipping rules included free shipping within the continental U.S., with pricing strategy adjusted to absorb part of the shipping cost.
+      </p>
+      <img src="images/order_details.png" alt="Rusted Luxe Order Details Page">
+    </section>
+
+    <section>
+      <h3>Outcome</h3>
+      <p>
+        The final Rusted Luxe site delivers a cohesive brand identity, a fully functional WooCommerce store, custom product catalog, streamlined checkout, and a polished, story‑driven shopping experience. This project strengthened my skills in WordPress customization, WooCommerce configuration, branding, UX design, and e‑commerce implementation.
+      </p>
+      <img src="images/order_thanks.png" alt="Rusted Luxe Order Thanks Page">
+    </section>
+
+  </div>
+</div>
+<!-- modal script -->
+  <script>
+  // Open modal
+  document.querySelectorAll('.open-modal').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const modalId = btn.getAttribute('data-modal');
+      document.getElementById(modalId).classList.add('active');
+    });
+  });
+
+  // Close modal
+  document.querySelectorAll('.modal-close').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.modal-overlay').classList.remove('active');
+    });
+  });
+
+  // Close when clicking outside content
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', e => {
+      if (e.target === overlay) overlay.classList.remove('active');
+    });
+  });
+</script>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+
+</body>
+</html>
+
+</body>
+</html>
